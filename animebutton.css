@@ -1,0 +1,47 @@
+body{
+    width: 97vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:980h;
+}       
+#buttonbox{
+    width: 200px;
+    height: 120px;
+    background-color: rgb(178,200,250);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;   
+    border-radius: 80px;
+   }
+#rotating{
+    width:200px;
+    height:100px;
+    background: linear-gradient(45deg,blue,green);
+    rotate:30deg ;
+    animation-name: rotate;
+    animation-duration:2s ;
+    animation-timing-function: linear;
+    animation-iteration-count:infinite;
+    position: relative;
+}
+@keyframes rotate{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg) ;
+    }
+}
+button{
+    position: absolute;
+    width: 185px;
+    height: 105px;
+    border-radius: 90px;
+    margin-top:123px;
+    background-color: rgb(250,250,250);
+    border: none;
+      
+}
